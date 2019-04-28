@@ -15,14 +15,3 @@ export const returnErrors = (msg, status) => {
 		payload: { msg, status }
 	};
 };
-{
-	const errors = {
-		msg: err.response.data,
-		status: err.response.status
-	};
-
-	dispatch({
-		type: GET_ERRORS,
-		payload: errors
-	});
-}
